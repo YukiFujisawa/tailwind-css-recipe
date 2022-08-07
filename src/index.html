@@ -9,18 +9,41 @@
     <link rel="shortcut icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body>
-    <header class="px-6">
-      <h1 class="w-40">
-        <a href="">
-          <img alt="ロゴ" src="../images/logo_og.jpg" />
-        </a>
-      </h1>
+  <body class="font-['Helvetica_Neue','Arial','Hiragino_Sans','Meiryo','sans-serif'] leading-normal text-[#2b2a27]">
+    <header class="pb-[78px]">
+      <img class="h-[100vh] w-[100%] object-cover object-top" src="../images/bg.jpeg" alt="bg" />
     </header>
-    <main class="px-6 py-6">
-      <!-- カスタムCSSサンプル -->
-      <!-- "btn-blue"は、index.cssに定義済み。 -->
-      <button class="btn-blue">サンプル</button>
+    <main class="text-center">
+      <h1 class="text-[2rem] font-bold">Recipe Diary</h1>
+      <p class="mt-4 px-5">
+        日々の料理レシピをまとめています。<br />
+        和食や洋食、中華、お菓子までいろいろな料理レシピをアップしていますので、<br />
+        みなさんの献立にお役立てくださいね！
+      </p>
+      <div class="py-20">
+        <ul class="sm:flex">
+          <li class="sm:w-[33.3%]">
+            <img class="h-[500px] w-[100%] object-cover" src="../images/recipe1.jpeg" alt="recipe1" />
+          </li>
+          <li class="sm:w-[33.3%]">
+            <img class="h-[500px] w-[100%] object-cover" src="../images/recipe2.jpeg" alt="recipe2" />
+          </li>
+          <li class="sm:w-[33.3%]">
+            <img class="h-[500px] w-[100%] object-cover" src="../images/recipe3.jpeg" alt="recipe3" />
+          </li>
+        </ul>
+        <button class="mt-[60px] border-[1px] border-black px-[60px] py-[18px] text-[14px]" onclick="location.href=''">
+          レシピ一覧を見る
+        </button>
+      </div>
     </main>
+    <footer class="py-[18px] text-[12px]">
+      <ul class="flex justify-center gap-5">
+        <li>instagram</li>
+        <li>Twitter</li>
+        <li>Facebook</li>
+      </ul>
+      <p class="mt-[16px] flex justify-center">© 2021 Recipe Diary</p>
+    </footer>
   </body>
 </html>
